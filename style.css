@@ -1,0 +1,117 @@
+/*CSS DOC*/
+ 	@charset "UTF-8";
+
+ /*Reset*/
+ 	html, body, h1, h2, h3, h4, img {
+ 		border: none;
+ 		margin: 0;
+ 		padding: 0;
+ 		text-decoration: none;
+ 	}
+/* * {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+*/
+
+/*Typo*/
+	body{
+		color: #000;
+		font-family: 'josefin Sans', Light;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	
+	h1{
+		color: #000;
+		font-family: 'josefin Sans', Light;
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+	h2{
+		color: #000;
+		font-family: 'josefin Sans', Light;
+		font-size: 72px;
+		font-weight: 300;
+	}
+
+	h3{
+		color: rgb(134,134,134);
+		font-family: 'josefin Sans', Light;
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+	h4{
+		color: #000;
+		font-family: 'josefin Sans', Light;
+		font-size: 36px;
+		font-weight: 300;
+	}
+
+	/*Layout*/
+	html{
+		height:100%;
+		width: 100%;
+	}
+
+	body{
+		background-color: #FFF;
+		height:100%;
+		width: 100%;
+	}
+
+	.Information{}
+
+	.page1{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.page2{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.stopmotion{
+		margin:120px auto 0px 120px;
+	}
+	.page3{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.page4{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.page5{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+	.page6{
+		margin:0 auto 0 auto;
+		width: 1920px;
+		height: 1080px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
