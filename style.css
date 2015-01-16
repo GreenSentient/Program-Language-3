@@ -2,21 +2,15 @@
  	@charset "UTF-8";
 
  /*Reset*/
- 	html, body, h1, h2, h3, h4, img {
+ 	html, body, h1, h2, h3, h4, label, img {
  		border: none;
  		margin: 0;
  		padding: 0;
  		text-decoration: none;
  	}
-/* * {
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-*/
 
 /*Typo*/
-	body{
+	body{	
 		color: #000;
 		font-family: 'josefin Sans', Light;
 		font-size: 30px;
@@ -24,33 +18,49 @@
 	}
 	
 	h1{
+		text-align: right;
+		margin-right:295px;
 		color: #000;
 		font-family: 'josefin Sans', Light;
 		font-size: 30px;
 		font-weight: 300;
 	}
-
+	
 	h2{
+		text-align: center;
 		color: #000;
-		font-family: 'josefin Sans', Light;
-		font-size: 72px;
-		font-weight: 300;
-	}
-
-	h3{
-		color: rgb(134,134,134);
 		font-family: 'josefin Sans', Light;
 		font-size: 30px;
 		font-weight: 300;
+	}
+	
+	h3{
+		text-align:center;
+		color:rgb(226,45,29);
+		font-family: 'josefin Sans', Light;
+		font-size: 30px;
+		font-weight: 300;
+		margin-top: 122px;
+		margin-bottom: 122px;
 	}
 
 	h4{
+		float:left;
 		color: #000;
 		font-family: 'josefin Sans', Light;
 		font-size: 36px;
 		font-weight: 300;
+		margin-top:428px;
+		margin-left:41px;
 	}
 
+	h5{
+		float: left;
+		color:#FFF;
+		font-family: 'josefin Sans', Light;
+		font-size: 24px;
+		font-weight:300;
+	}
 	/*Layout*/
 	html{
 		height:100%;
@@ -63,33 +73,204 @@
 		width: 100%;
 	}
 
+	
+
 	.Information{}
-
+	
 	.page1{
+		background-color: #FFF;
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
 	}
 
-	.page2{
-		margin:0 auto 0 auto;
+	.Guidebar{	
+		background-color: #000;
+		height:145px;
+		width: 1920px;
+		float: bottom;
+		position:fixed;
+		bottom:0px;
+	}
+
+	.Logo{
+		float:left;
+		padding-left:142px;
+		padding-top:26px;
+	}
+
+	.Menu{
+		height:145px;
+		float:right;
+		padding-right:500px;
+	}
+
+	.label{
+		color:#FFF;
+		float: right;
+		padding-left:120px;
+		padding-right:120px;
+		padding-top:91px;
+	}
+
+	.page2{		
+		margin: 0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
 	}
 
-	.stopmotion{
-		margin:120px auto 0px 120px;
+	.Stopmotion{
+		position: relative;
 	}
+
+	.Description{
+		float;
+		height:210px;
+		width:553px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		margin: 120px auto auto 120px;
+		font-size: 30px;
+	}
+
 	.page3{
+		float;
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
+	}
+
+	.boxFirst{
+		width: 1620px;
+		height:176px;
+		background-color: rgb(134,134,134);
+		margin:0 0 12px 0;
+		padding-bottom:50px;
+		padding-right: 300px;
+
+	}
+
+
+	.boxSecond{
+		width: 1920px;
+		height:126px;
+		background-color: rgb(134,134,134);
+		margin-bottom:12px;
+		padding-top:50px;
+		padding-bottom:50px;
+
+	}
+
+
+	.boxThird{
+		width: 1010px;
+		height:82px;
+		background-color: rgb(134,134,134);
+		margin:0 0 12px 0;
+		padding-top:72px;
+		padding-bottom:72px;
+		padding-right:455px;
+		padding-left:455px;
+	}
+
+
+	.boxFourth{
+		width:754px;
+		height:110px;
+		background-color: rgb(134,134,134);
+		margin:0 0 12px 0;
+		padding-left:1166px;
+		padding-top: 64px;
+		padding-bottom: 64px; 
+
 	}
 
 	.page4{
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
+		text-align: center;
+	}
+
+	.DescriptionRefill{
+		width:434px;
+		height:66px;
+		padding-top:185px;
+		padding-bottom:129px;
+		padding-right:743px; 
+		padding-left:743px;
+	}
+	
+	.Colors{
+		width:1920px;
+		height:274px;
+	}
+
+	.box1{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(226,45,29);
+		margin-left:0px;
+		
+		-webkit-transition:all  0.5s;	/*how long it would stay*/
+	-o-transition:all  0.5s;	/*how long it would stay*/
+	transition:all  0.5s;	/*how long it would stay*/
+
+	}
+	
+	.box1:hover{
+
+		-webkit-text-fill-color: rgb(255,255,255);
+		-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);/*(x,y) %*/
+		-webkit-transition: all  0.5s;	
+		-o-transition: all 0.5s;	
+	transition:all  0.5s;	
+	
+	}
+
+	.box2{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(219,137,0);
+	}
+
+	.box3{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(0,147,122);
+	}
+
+	.box4{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(0,137,151);
+	}
+
+	.box5{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(0,87,165);
+	}
+
+	.box6{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(51,46,119);
+	}
+
+	.box7{
+		float:left;
+		width:274px;
+		height:274px;
+		background-color:rgb(0,0,0);
 	}
 
 	.page5{
@@ -98,13 +279,69 @@
 		height: 1080px;
 	}
 
+	.DescriptionEngraving1{
+		float;
+		width:500px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		margin:427px auto 42px 120px;
+		font-size: 30px;
+	}
+
+	.DescriptionEngraving2{
+		float;
+		width:500px;
+		position:absolute;
+		top:0px;
+		left:1290px;
+		margin:427px 42px auto auto;
+		font-size:30px;
+	}
+
+	.DescriptionEngraving3{
+		float;
+		width:500px;
+		position:absolute;
+		top:40px;
+		left:1290px;
+		margin:427px 42px auto auto;
+		font-size: 30px;
+	}
+
 	.page6{
+		background-color: #FFF;
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
 	}
 
+	.background{
+		margin-top: 133px;
+		margin-left: 400px;
+	}
 
+	.price1{
+		position:absolute;
+		top:455px;
+		left:1184px;
+		font-size:72px;
+		font-color:#FFF;
+	}
+
+	.price2{
+		position:absolute;
+		top:520px;
+		left:1184px;
+		font-size:30px;
+		font-color:rgb(134,134,134);
+	}
+
+	.button{
+		position: absolute;
+		top:550px;
+		left:1184px;
+	}
 
 
 
