@@ -87,7 +87,7 @@
 		background-color: #000;
 		height:145px;
 		width: 1920px;
-		float: bottom;
+		float;
 		position:fixed;
 		bottom:0px;
 	}
@@ -113,24 +113,22 @@
 	}
 
 	.page2{		
+		background-image: url("img/IMGP7503.JPG");
 		margin: 0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
 	}
 
 	.Stopmotion{
-		position: relative;
 	}
 
 	.Description{
 		float;
 		height:210px;
 		width:553px;
-		position:absolute;
-		top:0px;
-		left:0px;
-		margin: 120px auto auto 120px;
+		margin: 0 auto auto 120px;
 		font-size: 30px;
+		padding-top: 120px;
 	}
 
 	.page3{
@@ -210,6 +208,7 @@
 	}
 
 	.page4{
+		
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
@@ -400,6 +399,7 @@
 	}
 
 	.page5{
+		background-image: url("img/Engraving copy copy.jpg");
 		margin:0 auto 0 auto;
 		width: 1920px;
 		height: 1080px;
@@ -410,81 +410,67 @@
 	}
 
 	.DescriptionEngraving1{
-		float;
+		float:left;
 		width:500px;
-		position:absolute;
-		top:0px;
-		left:0px;
-		margin:427px auto 42px 120px;
+		margin-top:427px;
+		margin-left: 120px;
 		font-size: 30px;
 	}
 
 	.DescriptionEngraving2{
-		float;
+		float:right;
 		width:500px;
-		position:absolute;
-		top:0px;
-		left:1290px;
-		margin:427px 42px auto auto;
+		margin-top:427px; 
+		margin-right:42px; 
+		margin-bottom: 10px;
 		font-size:30px;
+		
 	}
 
 	.DescriptionEngraving3{
 		float;
 		width:500px;
-		position:absolute;
-		top:40px;
-		left:1290px;
-		margin:427px 42px auto auto;
+		margin:0px 42px auto auto;
 		font-size: 30px;
 	}
 
 	.page6{
 		background-color: #FFF;
+		background-image: url("img/Profile.jpg");
 		margin:0 auto 0 auto;
 		width: 1920px;
-		height: 1080px;
+		height: 480px;
+		padding-top: 500px;
 	}
 
-	.background_6{
-		margin-top: 133px;
-		margin-left: 400px;
-	}
 
 	.price1{
-		position:absolute;
-		top:445px;
-		left:1184px;
-		font-size:72px;
-		font-color:#FFF;
+		float:right;
+		padding-right:300px;
+		font-size: 72px;
 	}
 
 	.price2{
-		position:absolute;
-		top:525px;
-		left:1190px;
-		font-size:30px;
 		font-color:rgb(134,134,134);
+		float:left;
+		padding-left:1353px;
+		font-size:30px;
 	}
 
 	.button{
-		position: absolute;
-		top:580px;
-		left:1250px;
+		float:right;
+		padding-right:367px;
 
-		font-family: 'josefin Sans', Light;
-		font-size: 30px;
-		font-weight: 300;
 	}
 
 	.btn{
 		border-radius: 3px
 	}
 
-	.page61{
+	/*.page1{
 		height:100%;
 		width:100%;
-	}
+	}*/
 
 
 
