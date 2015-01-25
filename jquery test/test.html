@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content - Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="posterbox">
+<div id="parent">
+<div id="imgslide">
+<ul>
+<li><img src="img/002.jpg"/></li>
+<li><img src="img/003.jpg"/></li>
+<li><img src="img/004.jpg"/></li>
+<li><img src="img/005.jpg"/></li>
+<li><img src="img/006.jpg"/></li>
+<li><img src="img/007.jpg"/></li>
+<li><img src="img/008.jpg"/></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<style type="text/css">
+*{margin:0;padding:0}
+#posterbox{margin-left: 200px;margin-top: 30px;}
+#parent{width:700px;height:200px;
+overflow: hidden;/* 자신의 영역을 벗어나면 감춰라. */
+position: relative;
+background-color: orange;border:5px solid green;}
+/* imgslide(자식div)는 이미지 7개가 담길 크기*/
+#imgslide{width:980px;height:200px;position:absolute;left:0px;}
+#imgslide ul li{list-style-type: none;float:left;}
+#imgslide ul li img{width:136px;height:196px;margin:2px}
+</style>
+
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+setInterval(function(){
+$("#imgslide").animate({
+'left':'-=140px'
+},1000,function(){
+var left=parseInt($("imgslide").css('left'));
+if(left<=-980){
+$("imgslide").css('left','700px');
+}
+}).delay(500);//0.5초 지연하기
+}, 1500);
+});
+</script>
+
+	

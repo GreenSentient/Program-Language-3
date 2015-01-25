@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>scroll demo</title>
+  <style>
+  div {
+    color: blue;
+  }
+  p {
+    color: green;
+  }
+  span {
+    color: red;
+    display: none;
+  }
+
+  </style>
+  </head>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+
+<body>
+ 
+<div>Try scrolling the iframe.</div>
+<span><img src="img/002.jpg"/></span>
+<span><img src="img/003.jpg"/></span>
+<span><img src="img/004.jpg"/></span>
+<span><img src="img/005.jpg"/></span>
+
+<script>
+$( window ).scroll(function() {
+  $( "span" ).css( "display", "inline" ).toggle("fast");
+});
+$( window ).scroll(function() {
+  $( "span" ).css( "display", "inline" ).toggle("slow");
+});
+$( window ).scroll(function() {
+  $( "span" ).css( "display", "inline" ).toggle("slow");
+});
+$( window ).scroll(function() {
+  $( "span" ).css( "display", "inline" ).show("slow");
+});
+</script>
+ 
+</body>
+</html>
+

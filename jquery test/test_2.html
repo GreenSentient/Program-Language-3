@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content - Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="animation.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div id="object" class="slideDown">
+		<li><img src="img/003.jpg"/></li>
+		<li><img src="img/004.jpg"/></li>
+	</div>	
+</body>
+</html>
+
+<style type="text/css">
+*{margin:0;padding:0}
+
+#object{
+	background-color: #fe5652;
+
+	visibility: hidden;
+}
+
+
+</style>
+
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideDown");
+			}
+		});
+	});
+</script>
+

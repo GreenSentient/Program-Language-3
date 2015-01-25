@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+      #box{width:100px;height: 100px;background-color: red}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+          //버튼을 클릭하면 호출
+            $("#btn").click(function(){
+                 //marginLeft속성값을 200으로 옮깁니다.
+                  $("#box").css('marginLeft',200);               
+            });  
+      });
+</script>
+</head>
+<body>
+<input type="button" value="move" id="btn">
+<div id="box">
+</div>
+</body>
+</html>
