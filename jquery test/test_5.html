@@ -14,15 +14,22 @@
  
 <span style="display"><img src="img/002.jpg"/></span>
 <span style="display:none"><img src="img/003.jpg"/></span>
-<span style="display:none"><img src="img/003.jpg"/></span>
+<span style="display:none"><img src="img/004.jpg"/></span>
+
 <span style="display:none"><img src="img/005.jpg"/></span>
+
 <span style="display:none"><img src="img/006.jpg"/></span>
 <span style="display:none"><img src="img/007.jpg"/></span>
 
 <script>
+if ($(window).scrollTop() >= $(document).height() - $(window).height() - 20) {
+
 $( window ).scroll(function() {
-  $( "span" ).toggle();
+   $( "span" ).toggle();
+ 
 });
+
+}
 </script>
 
 </body>
